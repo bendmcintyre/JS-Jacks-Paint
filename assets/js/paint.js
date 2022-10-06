@@ -1,5 +1,5 @@
 function configureListeners() {
-  let images = ["./lime-green.jpeg", "./medium-brown/jpg"]; // select img elements
+  let images = document.getElementsByTagName("img"); // select img elements
 
   for (var i = 0; i < images.length; i++) {
     // iterate over images and add mouseover event listeners
@@ -22,7 +22,7 @@ function addOpacity(event) {
 
 function removeOpacity(event) {
   //remove appropriate CSS class
-  if (this.classList.contains("dim)")) {
+  if (this.classList.contains("dim")) {
     this.classList.remove("dim");
   }
 
